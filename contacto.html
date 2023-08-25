@@ -9,8 +9,14 @@
     <title>Nostalgia Vintage</title>
 
     <!-- Acá van los links a los css que te darán estilos, uno general y otro particular -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/contacto.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,12 +25,12 @@
     <header>
         <h1>Nostalgia Vintage</h1>
         <nav>
-            <ul>
+            <ul class="nav">
                 <!-- El que tiene el clase active es donde estás parado y te ayuda a darle estilo especial -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="descripciones.html">Descripciones</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a  class="active" href="contacto.html">Contacto</a></li>
+                <li><a class="navi" href="index.html">Home</a></li>
+                <li><a class="navi" href="descripciones.html">Descripciones</a></li>
+                <li><a class="navi" href="tienda.html">Tienda</a></li>
+                <li><a class="navi, active" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +38,16 @@
 
     <!-- Este es el formulario de contacto -->
     <div>
+        <p>Quieres ponerte en contacto con nosotros? <br> No dudes en comunicarte, puedes llenar el siguiente formulario
+            y pronto nos comunicaremos contigo.</p>
+        <br><br>
         <form>
             <label for="nombre">Nombre: </label>
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+            <br>
             <label for="mail">Email: </label>
             <input type="email" id="mail" name="mail" placeholder="Escribe tu email" required>
+            <br>
             <label for="pais">País: </label>
             <select name="pais" id="pais">
                 <option value="Argentina">Argentina</option>
@@ -50,9 +61,10 @@
                 <option value="Paraguay">Paraguay</option>
                 <option value="Ecuaador">Ecuaador</option>
             </select>
+            <br>
             <label for="comentario">Comentario: </label>
             <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
-
+            <br><br>
 
             <input type="submit" value="Enviar">
 
@@ -61,7 +73,7 @@
 
     <!-- Este es el footer (la parte del final de la página) -->
     <footer>
-        <p>Derechos reservados &copy; 2023</p>
+        <p> Specimen &copy 2023. Derechos reservados.</p>
     </footer>
 
 

@@ -9,8 +9,14 @@
     <title>Nostalgia Vintage</title>
 
     <!-- Acá van los links a los css que te darán estilos, uno general y otro particular -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/audiovisuales.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/tienda.css">
 
 </head>
 
@@ -20,45 +26,66 @@
     <header>
         <h1>Nostalgia Vintage</h1>
         <nav>
-            <ul>
+            <ul class="nav">
                 <!-- El que tiene el clase active es donde estás parado y te ayuda a darle estilo especial -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="descripciones.html">Descripciones</a></li>
-                <li><a  class="active" href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="navi" href="index.html">Home</a></li>
+                <li><a class="navi" href="descripciones.html">Descripciones</a></li>
+                <li><a class="navi, active" href="tienda.html">Tienda</a></li>
+                <li><a class="navi" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Este es el VIDEO -->
+    <h2>Tecnologia antigua y moderna, esa es nuestra vision.</h2>
     <div>
         <video src="/assets/video/video1.mp4" height="400px" controls></video>
     </div>
 
+<br>
+<hr>
+<h2>Nuestra galeria de productos</h2>
 
     <!-- Estas son las imágenes -->
     <section>
-        <div>
-            <a href="/assets/img/imagen4.jpeg" target="_blank"><img src="/assets/img/imagen4.jpeg" alt="Imagen 1"
-                    width="600"></a>
-            <div>Musica</div>
-        </div>
-        <div>
-            <a href="/assets/img/imagen5.jpg" target="_blank"><img src="/assets/img/imagen5.jpg" alt="Imagen 2"
-                    width="600"></a>
-            <div>Moviles</div>
-        </div>
-        <div>
-            <a href="/assets/img/imagen6.jfif" target="_blank"><img src="/assets/img/imagen6.jfif" alt="Imagen 3"
-                    width="600"></a>
-            <div>Videojuegos</div>
+        <div class="flex-container">
+            <div>
+                <a href="/assets/img/imagen4.jpeg" target="_blank"><img src="/assets/img/imagen4.jpeg" alt="Imagen 1"
+                        width="600"></a>
+                <div>Musica</div>
+            </div>
+            <div>
+                <a href="/assets/img/imagen5.jpg" target="_blank"><img src="/assets/img/imagen5.jpg" alt="Imagen 2"
+                        width="600"></a>
+                <div>Moviles</div>
+            </div>
+            <div>
+                <a href="/assets/img/imagen6.jfif" target="_blank"><img src="/assets/img/imagen6.jfif" alt="Imagen 3"
+                        width="600"></a>
+                <div>Videojuegos</div>
+            </div>
+            <div>
+                <a href="/assets/img/imagen1.jpeg" target="_blank"><img src="/assets/img/imagen1.jpeg" alt="Imagen 3"
+                        width="600"></a>
+                <div>Computacion</div>
+            </div>
+            <div>
+                <a href="/assets/img/imagen2.jpeg" target="_blank"><img src="/assets/img/imagen2.jpeg" alt="Imagen 3"
+                        width="600"></a>
+                <div>Telecomunicaciones</div>
+            </div>
+            <div>
+                <a href="/assets/img/imagen3.jpeg" target="_blank"><img src="/assets/img/imagen3.jpeg" alt="Imagen 3"
+                        width="600"></a>
+                <div>Multimedia</div>
+            </div>
         </div>
     </section>
 
 
     <!-- Este es el footer (la parte del final de la página) -->
     <footer>
-        <p>Derechos reservados &copy; 2023</p>
+        <p> Specimen &copy 2023. Derechos reservados.</p>
     </footer>
 
 

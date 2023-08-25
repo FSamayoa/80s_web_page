@@ -1,0 +1,26 @@
+th{
+    text-align: center;
+    border: 2px solid gray;
+}
+
+colgroup{
+    width: 200px;
+    text-align: center;
+    
+}
+
+tr{
+    text-align: left;
+    height: 40px;
+    border: 2px solid gray;
+}
+
+
+table{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+td{
+    border: 2px solid gray;
+}

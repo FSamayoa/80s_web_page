@@ -16,3 +16,47 @@ img {
     width: 300px;
 }
 
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Tektur', cursive;
+    background-color: black;    
+}
+
+
+li{
+    float: left;
+    text-decoration: none;
+    border: 5px solid whitesmoke;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+li:hover:not(.active){
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+}
+
+li a.navi{
+    color: antiquewhite;
+    display: block;
+    text-decoration: none;
+}
+
+li a.navi:hover:not(.active){
+    color: black;
+    text-decoration: none;
+    
+}
+
+.active{
+    color: black;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
